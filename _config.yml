@@ -9,13 +9,13 @@ title:              fmy_notes
 description:        base de conocimiento del fmy
 
 # Site subpath, e.g. /blog
-baseurl:            "/fmy_desk"
+baseurl:            "fmy_desk"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://github.com/gustavodietz"
+url:                "https://gustavodietz.github.io"
 
 # Site logo, image or text
 brand:

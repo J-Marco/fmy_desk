@@ -1,19 +1,16 @@
 # Categories home page navigation
 
-- heading: Browse All Topics
+- heading: Tópicos principales
   categories:
-    - title: Meditación
-      desc: Get your account up and running in just few easy steps
-      icon: settings
+    - title: Meditacion
+      desc: Prácticas en audio y reflexiones
+      icon: grid
 
-    - title: Filosofía
-      desc: Managing your account, creating new users and exporting data
-      icon: credit-card
+    - title: Trabajo Corporal
+      desc: Esquemas, videos y apuntes
+      icon: grid
 
-    - title: Trabajo corporal y respiración
-      desc: Answers to most common configuration issues
-      icon: cog
+    - title: Yoga Nidra
+      desc: Prácticas y textos 
+      icon: grid
 
-    - title: Yoga nidra y yoga del sueño
-      desc: Answers to most common configuration issues
-      icon: cog

@@ -9,7 +9,7 @@ hero:
     text: dark
     search: true
 category:
-    columns: 4
+    columns: 3
 featured:
     title: Artículos importantes
     tag: featured
