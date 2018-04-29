@@ -25,19 +25,19 @@ brand:
 # Author settings, displayed on about page
 author:
     name:           Gustavo G. D.
-    email:
-    website:
+    email:          nirakara@nirakara.org
+    website:        https://nirakara.org
     facebook:       
     flickr:
-    dribbble:
-    github:
+    dribbble:        
+    github:         https://github.com/gustavodietz 
     googleplus:
     instagram:      
     linkedin:
     pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          
-    youtube:
+    twitter:        https://twitter.com/gustavodietz
+    vimeo:          https://vimeo.com/nirakara        
+    youtube:        https://www.youtube.com/channel/UCHuj2a6pPXAUR-1mtFR36nQ
 
 # Social share buttons
 twitter_username:   gustavodietz
@@ -49,7 +49,7 @@ footer:
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
-    shortname:      # 7865
+    shortname:      gustavodietz.github.io/med_notes/
 
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics:
