@@ -9,13 +9,13 @@ title:              Desk - Helpdesk Jekyll Theme
 description:        Knowledge base Jekyll theme.
 
 # Site subpath, e.g. /blog
-baseurl:            ""
+baseurl:            "/fmy_desk"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://desk.jekyll.plus"
+url:                "https://github.com/gustavodietz"
 
 # Site logo, image or text
 brand:
