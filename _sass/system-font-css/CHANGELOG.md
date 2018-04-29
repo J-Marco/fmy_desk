@@ -1,13 +1,14 @@
-## 2.0.0 (2017-06-28)
+## Mayo 1 (2018-04-30)
 
-- Changed from `system` to `system-ui` to match the CSS specification.
+- Algunas indicaciones para el retiro.
 
-## 1.1.0 (2015-08-02)
+## Abril 2 (2018-04-30)
 
-- Added: Android fonts Roboto and Droid Sans after Ubuntu.
-- Removed: Windows 3.1-ME font Microsoft Sans Serif.
-- Updated: documentation.
 
-## 1.0.0 (2015-07-30)
+- Lectura sobre el [pranayama](https://google.com)
+- arbol del yoga (práctica)
+- respiración del silencio
 
-- Added: Initial version
+## Abril 1 (2018-04-30)
+
+- Añadido un audio de [meditación](https://google.com)
