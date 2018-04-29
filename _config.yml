@@ -49,7 +49,7 @@ footer:
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
-    shortname:      gustavodietz.github.io/med_notes/
+    shortname:      fmy-desk
 
 # Google analytics code, get your code here https://www.google.com/analytics/
 google_analytics:
