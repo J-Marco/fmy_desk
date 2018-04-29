@@ -2,14 +2,18 @@
 
 - heading: Browse All Topics
   categories:
-    - title: Getting Started
+    - title: Meditación
       desc: Get your account up and running in just few easy steps
       icon: settings
 
-    - title: Account and Billing
+    - title: Filosofía
       desc: Managing your account, creating new users and exporting data
       icon: credit-card
 
-    - title: Troubleshooting
+    - title: Trabajo corporal y respiración
+      desc: Answers to most common configuration issues
+      icon: cog
+
+    - title: Yoga nidra y yoga del sueño
       desc: Answers to most common configuration issues
       icon: cog

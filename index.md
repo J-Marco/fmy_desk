@@ -1,7 +1,7 @@
 ---
 layout: help
-title: How Can We Help You?
-subtitle: Self Help Support
+title: FMY_notes
+subtitle: base de conocimiento
 hero:
     background: "#ffffff"
     image: header.jpg
@@ -9,8 +9,8 @@ hero:
     text: dark
     search: true
 category:
-    columns: 3
+    columns: 4
 featured:
-    title: Featured Articles
+    title: Artículos importantes
     tag: featured
 ---

@@ -5,8 +5,8 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              Desk - Helpdesk Jekyll Theme
-description:        Knowledge base Jekyll theme.
+title:              fmy_notes
+description:        base de conocimiento del fmy
 
 # Site subpath, e.g. /blog
 baseurl:            "/fmy_desk"
@@ -19,12 +19,12 @@ url:                "https://github.com/gustavodietz"
 
 # Site logo, image or text
 brand:
-    image:          logo.svg # e.g. logo.png, upload logo image file to /assets/img/ folder
-    text:           Desk      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+    image:           # e.g. logo.png, upload logo image file to /assets/img/ folder
+    text:           <fmy>      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
 # Author settings, displayed on about page
 author:
-    name:           John Smith
+    name:           Gustavo G. D.
     email:
     website:
     facebook:       https://www.facebook.com/
@@ -40,12 +40,12 @@ author:
     youtube:
 
 # Social share buttons
-twitter_username:   ivanchromjak
-github_username:    ivanchromjak
+twitter_username:   gustavodietz
+github_username:    gustavodietz
 
 # Default footer image settings
 footer:
-    copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+    copyright:      Hecho por <a href="https://nirakara.org/">nirakara</a> para la fmy.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
