@@ -9,7 +9,7 @@ title:              fmy_notes
 description:        base de conocimiento del fmy
 
 # Site subpath, e.g. /blog
-baseurl:            ""
+baseurl:            "/fmy_notes"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
