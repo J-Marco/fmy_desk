@@ -7,7 +7,7 @@ hero:
     image: header.jpg
     align: center
     text: dark
-    search: true
+    search: false
 category:
     columns: 3
 featured:

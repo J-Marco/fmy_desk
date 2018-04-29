@@ -1,10 +1,9 @@
 # Navbar menu navigation links
 - title: Help
-  url: /
+  url: /fmy_desk/help/
 
 - title: Faq
   url: /fmy_desk/faq/
 
 - title: Contact
   url: /fmy_desk/contact/
-

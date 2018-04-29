@@ -9,4 +9,3 @@ formspree:
 
 #### Síentete libre en preguntar o aportar lo que quieras.
 
-{% include map.html latitude="40.6700" longitude="-73.9400" zoom="16" %}
