@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>How Can We Help You? | Desk - Helpdesk Jekyll Theme</title>
+<meta name="generator" content="Jekyll v3.4.1" />
+<meta property="og:title" content="How Can We Help You?" />
+<meta name="author" content="John Smith" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Knowledge base Jekyll theme." />
+<meta property="og:description" content="Knowledge base Jekyll theme." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Desk - Helpdesk Jekyll Theme" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/","author":{"@type":"Person","name":"John Smith"},"description":"Knowledge base Jekyll theme.","name":"Desk - Helpdesk Jekyll Theme","headline":"How Can We Help You?","@type":"WebSite","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <meta property="og:image" content="http://localhost:4000/assets/posts/logo.svg"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
+  <link rel="alternate" type="application/rss+xml" title="Desk - Helpdesk Jekyll Theme" href="/feed.xml">
+  <script src="/assets/js/main.js"></script>
+  
+</head>
+
+
+    <body>
+
+    
+        
+
+
+
+
+
+<header class="uk-background-center-center uk-background-cover" style="background-color: #ffffff; background-image: url(http://localhost:4000/assets/posts/header.jpg);">
+    <div class="uk-overlay-header">
+
+        <nav class="uk-navbar-container uk-navbar-transparent uk-dark">
+            <div class="uk-container">
+    <div data-uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="/"><img src="http://localhost:4000/assets/posts/logo.svg"></a>
+
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                
+                    
+                    
+                    
+                        <li class="uk-active"><a href="/" >Help</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/faq/" >Faq</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/contact/" >Contact</a></li>
+                    
+                
+            </ul>
+
+            
+
+            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+
+        </div>
+    </div>
+</div>
+
+        </nav>
+
+        <div class="uk-section section-hero dark">
+            <div class="uk-container">
+                <h1 class="uk-heading-hero uk-text-center">How Can We Help You?</h1>
+                <p class="subtitle uk-text-uppercase uk-text-center">Self Help Support</p>
+
+                <div class="uk-article-meta uk-text-center">
+                    
+                    
+                    
+
+                </div>
+
+                
+                <div class="hero-search">
+
+                    <!-- Html Elements for Search -->
+                    <div class="uk-position-relative">
+                        <form class="uk-search uk-search-default uk-width-1-1" name"search-hero" onsubmit="return false;">
+                            <span uk-search-icon></span>
+                            <input id="hero-search" class="uk-search-input" type="search" placeholder="Search for answers...">
+                        </form>
+                        <ul id="hero-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                    </div>
+
+                    <script>
+                    SimpleJekyllSearch({
+                        searchInput: document.getElementById('hero-search'),
+                        resultsContainer: document.getElementById('hero-search-results'),
+                        noResultsText: '<li>No results found</li>',
+                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                        json: '/search.json'
+                    });
+                    </script>
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+
+    <main aria-label="Content">
+    
+
+<script>
+function filter(tag) {
+  setActiveTag(tag);
+  showContainer(tag);
+}
+
+function setActiveTag(id) {
+  // loop through all items and remove active class
+  var items = document.getElementsByClassName('card-category');
+  for(var i=0; i < items.length; i++) {
+    items[i].classList.remove('uk-card-primary');
+    items[i].classList.add('uk-card-default');
+  }
+
+  // set the selected id's item to active
+  var item = document.getElementById(id + '-card');
+  if(item) {
+    item.classList.remove('uk-card-default');
+    item.classList.add('uk-card-primary');
+  }
+}
+
+function showContainer(id) {
+  // loop through all lists and hide them
+  var lists = document.getElementsByClassName('category-container');
+  for(var i=0; i < lists.length; i++) {
+    lists[i].classList.add('hidden');
+  }
+
+  // remove the hidden class from the list corresponding to the selected id
+  var list = document.getElementById(id + '-container');
+  var section = document.getElementById('category-section');
+  if(list) {
+    section.classList.remove('hidden');
+    list.classList.remove('hidden');
+  }
+
+}
+</script>
+
+<div class="uk-section uk-section-large uk-background-muted">
+    <div class="uk-container">
+        
+            
+                <h2 class="uk-text-center section-title">Browse All Topics</h2>
+            
+            <div class="uk-child-width-1-3@m uk-grid-match uk-text-center" uk-grid>
+            
+                
+                
+                <div>
+                    <div id="getting-started-card" class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-card-body uk-inline card-category">
+                        <a class="uk-position-cover" href="#getting-started-container" uk-scroll="duration: 400; offset: 35;" onclick="filter('getting-started');"></a>
+                        
+                        <span uk-icon="icon: settings; ratio: 2" class=""></span>
+                        
+                        <h3 class="uk-card-title uk-margin">Getting Started</h3>
+                        
+                        <p>Get your account up and running in just few easy steps</p>
+                        
+                    </div>
+                </div>
+                
+            
+                
+                
+                <div>
+                    <div id="account-and-billing-card" class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-card-body uk-inline card-category">
+                        <a class="uk-position-cover" href="#account-and-billing-container" uk-scroll="duration: 400; offset: 35;" onclick="filter('account-and-billing');"></a>
+                        
+                        <span uk-icon="icon: credit-card; ratio: 2" class=""></span>
+                        
+                        <h3 class="uk-card-title uk-margin">Account and Billing</h3>
+                        
+                        <p>Managing your account, creating new users and exporting data</p>
+                        
+                    </div>
+                </div>
+                
+            
+                
+                
+                <div>
+                    <div id="troubleshooting-card" class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-card-body uk-inline card-category">
+                        <a class="uk-position-cover" href="#troubleshooting-container" uk-scroll="duration: 400; offset: 35;" onclick="filter('troubleshooting');"></a>
+                        
+                        <span uk-icon="icon: cog; ratio: 2" class=""></span>
+                        
+                        <h3 class="uk-card-title uk-margin">Troubleshooting</h3>
+                        
+                        <p>Answers to most common configuration issues</p>
+                        
+                    </div>
+                </div>
+                
+            
+            </div>
+        
+    </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-default">
+    <div class="uk-container uk-container-small">
+
+        <div class="uk-article-content">
+</div>
+        
+        
+        <div class="">
+            
+            <h2 class="">Featured Articles
+                <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+            </h2>
+            
+            <ul class="uk-list uk-list-large link-icon-right">
+            
+                <li><a href="/post7/">Getting a JavaScript console error</a></li>
+            
+                <li><a href="/post5/">Accepted currencies for product billing</a></li>
+            
+                <li><a href="/post4/">Cancelling a website subscription</a></li>
+            
+                <li><a href="/post1/">Setting up new domain and page</a></li>
+            
+                <li><a href="/post0/">Getting started with our application</a></li>
+            
+            </ul>
+        </div>
+        
+
+        <div id="category-section" class="uk-margin-large-top hidden">
+            <hr>
+            
+            
+
+            <div id="getting-started-container" class="category-container hidden">
+                <h2 class="">Getting Started
+                    <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+                </h2>
+                <ul class="uk-list uk-list-large link-icon-right uk-margin-remove">
+                
+                    <li><a href="/post63/">Selecting the right fonts and colors</a></li>
+                
+                    <li><a href="/post62/">Design tips for choosing great images</a></li>
+                
+                    <li><a href="/post61/">Upgrading to paid service</a></li>
+                
+                    <li><a href="/post60/">Purchasing domain name and DNS setup</a></li>
+                
+                    <li><a href="/post6/">Using Private Browsing or Incognito mode</a></li>
+                
+                    <li><a href="/post5/">Accepted currencies for product billing</a></li>
+                
+                    <li><a href="/post2/">Understanding company billing and accounts</a></li>
+                
+                    <li><a href="/post1/">Setting up new domain and page</a></li>
+                
+                    <li><a href="/post0/">Getting started with our application</a></li>
+                
+                    <li><a href="/post/">How To Setup Naked Domain SSL With Github Pages</a></li>
+                
+                </ul>
+            </div>
+            
+            
+
+            <div id="troubleshooting-container" class="category-container hidden">
+                <h2 class="">Troubleshooting
+                    <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+                </h2>
+                <ul class="uk-list uk-list-large link-icon-right uk-margin-remove">
+                
+                    <li><a href="/post7/">Getting a JavaScript console error</a></li>
+                
+                    <li><a href="/post63/">Selecting the right fonts and colors</a></li>
+                
+                    <li><a href="/post62/">Design tips for choosing great images</a></li>
+                
+                    <li><a href="/post61/">Upgrading to paid service</a></li>
+                
+                    <li><a href="/post60/">Purchasing domain name and DNS setup</a></li>
+                
+                    <li><a href="/post6/">Using Private Browsing or Incognito mode</a></li>
+                
+                    <li><a href="/post4/">Cancelling a website subscription</a></li>
+                
+                    <li><a href="/post3/">Updating your billing credit card</a></li>
+                
+                    <li><a href="/post1/">Setting up new domain and page</a></li>
+                
+                    <li><a href="/post0/">Getting started with our application</a></li>
+                
+                    <li><a href="/post/">How To Setup Naked Domain SSL With Github Pages</a></li>
+                
+                </ul>
+            </div>
+            
+            
+
+            <div id="account-and-billing-container" class="category-container hidden">
+                <h2 class="">Account and Billing
+                    <a href="#" data-uk-totop data-uk-scroll="duration: 400" class="uk-float-right uk-margin-small-top"></a>
+                </h2>
+                <ul class="uk-list uk-list-large link-icon-right uk-margin-remove">
+                
+                    <li><a href="/post5/">Accepted currencies for product billing</a></li>
+                
+                    <li><a href="/post4/">Cancelling a website subscription</a></li>
+                
+                    <li><a href="/post3/">Updating your billing credit card</a></li>
+                
+                    <li><a href="/post2/">Understanding company billing and accounts</a></li>
+                
+                    <li><a href="/post1/">Setting up new domain and page</a></li>
+                
+                    <li><a href="/post0/">Getting started with our application</a></li>
+                
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<!--
+<div class="uk-section uk-section-primary">
+    <div class="uk-container uk-container-small">
+        <div class="uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 100">
+            <div class="uk-width-auto@m uk-first-column">
+                <h3 class="">Didn't find an answer to your question?</h3>
+            </div>
+            <div class="uk-width-expand@m">
+                <a class="uk-button uk-button-default" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+    </main>
+
+    <footer class="uk-section uk-section-muted uk-text-center uk-text-muted uk-link-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li class="uk-active"><a href="/" >Help</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/faq/" >Faq</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/contact/" >Contact</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+<div>
+    <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+<div>
+    <a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright">Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.</div>
+
+    </div>
+</footer>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <ul class="uk-nav uk-nav-default">
+            <li><a class="uk-logo uk-margin-small-bottom" href="/"><img src="http://localhost:4000/assets/posts/logo.svg"></a></li>
+            
+                
+            <li><a href="http://localhost:4000/" >Help</a></li>
+            
+                
+            <li><a href="http://localhost:4000/faq/" >Faq</a></li>
+            
+                
+            <li><a href="http://localhost:4000/contact/" >Contact</a></li>
+            
+        </ul>
+
+        <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+<div>
+    <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+<div>
+    <a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    </body>
+
+</html>
