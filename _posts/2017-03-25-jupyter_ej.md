@@ -9,7 +9,6 @@ author: Gustavo G.D.
 
 ## Estudios con la palabra mindfulness en el título
 Aquí una posible imagen:
-![png](http://127.0.0.1:4000/fmy_desk/static/minion.png)
 
 ### Datos extraidos de PubMed
 Para ir a la búqueda ir a [PubMed](https://www.ncbi.nlm.nih.gov/pubmed?term=mindfulness%5BTitle%5D)
@@ -81,7 +80,7 @@ y=plot_bar_x()
 ```
 
 
-{% include image.html img="output_2_0.jpg" style="wide" lightbox="true" alt="Alt for image" caption="número de artículos con la palabra mindfulness en el título" %}
+{% include image.html img="output_2_0.png" style="wide" lightbox="true" alt="Alt for image" caption="número de artículos con la palabra mindfulness en el título" %}
 
 
 
