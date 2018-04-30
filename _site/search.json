@@ -102,6 +102,14 @@
       "tags"     : "",
       "url"      : "/fmy_desk/post/",
       "date"     : "2017-05-25 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "Usando Jupyter",
+      "category" : "",
+      "tags"     : "featured",
+      "url"      : "/fmy_desk/jupyter_ej/",
+      "date"     : "2017-03-25 00:00:00 +0100"
     } 
   
 ]

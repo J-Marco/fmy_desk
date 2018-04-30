@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Usando Jupyter - fmy_notes</title>
+<meta property="og:title" content="Usando Jupyter" />
+<meta name="description" content="Estudios con la palabra mindfulness en el título Aquí una posible imagen:" />
+<meta property="og:description" content="Estudios con la palabra mindfulness en el título Aquí una posible imagen:" />
+<link rel="canonical" href="http://localhost:4000/fmy_desk/jupyter_ej/" />
+<meta property="og:url" content="http://localhost:4000/fmy_desk/jupyter_ej/" />
+<meta property="og:site_name" content="fmy_notes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-03-25T00:00:00+01:00" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Usando Jupyter",
+"datePublished": "2017-03-25T00:00:00+01:00",
+"description": "Estudios con la palabra mindfulness en el título Aquí una posible imagen:",
+"url": "http://localhost:4000/fmy_desk/jupyter_ej/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <meta property="og:image" content="http://localhost:4000/fmy_desk/assets/posts/"/>
+  <link rel="stylesheet" href="/fmy_desk/assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="/fmy_desk/assets/img/favicon.png" >
+  <link rel="alternate" type="application/rss+xml" title="fmy_notes" href="/fmy_desk/feed.xml">
+  <script src="/fmy_desk/assets/js/main.js"></script>
+  
+</head>
+
+
+    <body>
+
+    
+        <header class="uk-background-secondary">
+    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1904px;">
+        <nav class="uk-navbar-container">
+            <div class="uk-container">
+    <div data-uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="/fmy_desk/">&lt;fmy&gt;</a>
+
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+                
+                    
+                    
+                    
+                        <li><a href="/fmy_desk/help/" >Help</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/fmy_desk/faq/" >Faq</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/fmy_desk/contact/" >Contact</a></li>
+                    
+                
+            </ul>
+
+            
+            <div>
+                <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
+                    <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                        <input id="navbar-search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                    <ul id="navbar-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                </div>
+            </div>
+            <script>
+            SimpleJekyllSearch({
+                searchInput: document.getElementById('navbar-search'),
+                resultsContainer: document.getElementById('navbar-search-results'),
+                noResultsText: '<li>No results found</li>',
+                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                json: '/search.json'
+            });
+            </script>
+            
+
+            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+
+        </div>
+    </div>
+</div>
+
+        </nav>
+    </div>
+</header>
+
+    
+
+    <main aria-label="Content">
+    <div class="uk-section">
+    <div class="uk-container uk-container-small">
+        <article class="uk-article">
+
+            <h1 class="uk-article-title">Usando Jupyter</h1>
+
+            <div class="share-side uk-visible@m" uk-scrollspy="cls: uk-animation-fade; target: .share; repeat: true">
+                <div class="share" uk-sticky="offset: 150; bottom: .uk-article-content;"><div class="share">
+    <a href="https://twitter.com/intent/tweet?text=Usando Jupyter&url=http://localhost:4000/jupyter_ej/&via=gustavodietz&related=gustavodietz" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span class="twitter"><svg class="svgIcon-use" width="40" height="40" viewBox="0 0 29 29"><path d="M21.967 11.8c.018 5.93-4.607 11.18-11.177 11.18-2.172 0-4.25-.62-6.047-1.76l-.268.422-.038.5.186.013.168.012c.3.02.44.032.6.046 2.06-.026 3.95-.686 5.49-1.86l1.12-.85-1.4-.048c-1.57-.055-2.92-1.08-3.36-2.51l-.48.146-.05.5c.22.03.48.05.75.08.48-.02.87-.07 1.25-.15l2.33-.49-2.32-.49c-1.68-.35-2.91-1.83-2.91-3.55 0-.05 0-.01-.01.03l-.49-.1-.25.44c.63.36 1.35.57 2.07.58l1.7.04L7.4 13c-.978-.662-1.59-1.79-1.618-3.047a4.08 4.08 0 0 1 .524-1.8l-.825.07a12.188 12.188 0 0 0 8.81 4.515l.59.033-.06-.59v-.02c-.05-.43-.06-.63-.06-.87a3.617 3.617 0 0 1 6.27-2.45l.2.21.28-.06c1.01-.22 1.94-.59 2.73-1.09l-.75-.56c-.1.36-.04.89.12 1.36.23.68.58 1.13 1.17.85l-.21-.45-.42-.27c-.52.8-1.17 1.48-1.92 2L22 11l.016.28c.013.2.014.35 0 .52v.04zm.998.038c.018-.22.017-.417 0-.66l-.498.034.284.41a8.183 8.183 0 0 0 2.2-2.267l.97-1.48-1.6.755c.17-.08.3-.02.34.03a.914.914 0 0 1-.13-.292c-.1-.297-.13-.64-.1-.766l.36-1.254-1.1.695c-.69.438-1.51.764-2.41.963l.48.15a4.574 4.574 0 0 0-3.38-1.484 4.616 4.616 0 0 0-4.61 4.613c0 .29.02.51.08.984l.01.02.5-.06.03-.5c-3.17-.18-6.1-1.7-8.08-4.15l-.48-.56-.36.64c-.39.69-.62 1.48-.65 2.28.04 1.61.81 3.04 2.06 3.88l.3-.92c-.55-.02-1.11-.17-1.6-.45l-.59-.34-.14.67c-.02.08-.02.16 0 .24-.01 2.12 1.55 4.01 3.69 4.46l.1-.49-.1-.49c-.33.07-.67.12-1.03.14-.18-.02-.43-.05-.64-.07l-.76-.09.23.73c.57 1.84 2.29 3.14 4.28 3.21l-.28-.89a8.252 8.252 0 0 1-4.85 1.66c-.12-.01-.26-.02-.56-.05l-.17-.01-.18-.01L2.53 21l1.694 1.07a12.233 12.233 0 0 0 6.58 1.917c7.156 0 12.2-5.73 12.18-12.18l-.002.04z"></path></svg>
+</span></a>
+    
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fjupyter_ej%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span class="facebook"><svg class="svgIcon-use" width="40" height="40" viewBox="0 0 29 29"><path d="M16.39 23.61v-5.808h1.846a.55.55 0 0 0 .546-.48l.36-2.797a.551.551 0 0 0-.547-.62H16.39V12.67c0-.67.12-.813.828-.813h1.474a.55.55 0 0 0 .55-.55V8.803a.55.55 0 0 0-.477-.545c-.436-.06-1.36-.116-2.22-.116-2.5 0-4.13 1.62-4.13 4.248v1.513H10.56a.551.551 0 0 0-.55.55v2.797c0 .304.248.55.55.55h1.855v5.76c-4.172-.96-7.215-4.7-7.215-9.1 0-5.17 4.17-9.36 9.31-9.36 5.14 0 9.31 4.19 9.31 9.36 0 4.48-3.155 8.27-7.43 9.15M14.51 4C8.76 4 4.1 8.684 4.1 14.46c0 5.162 3.75 9.523 8.778 10.32a.55.55 0 0 0 .637-.543v-6.985a.551.551 0 0 0-.55-.55H11.11v-1.697h1.855a.55.55 0 0 0 .55-.55v-2.063c0-2.02 1.136-3.148 3.03-3.148.567 0 1.156.027 1.597.06v1.453h-.924c-1.363 0-1.93.675-1.93 1.912v1.78c0 .3.247.55.55.55h2.132l-.218 1.69H15.84c-.305 0-.55.24-.55.55v7.02c0 .33.293.59.623.54 5.135-.7 9.007-5.11 9.007-10.36C24.92 8.68 20.26 4 14.51 4"></path></svg>
+</span></a>
+</div>
+</div>
+            </div>
+
+            <div class="uk-article-content">
+                <h2 id="estudios-con-la-palabra-mindfulness-en-el-título">Estudios con la palabra mindfulness en el título</h2>
+<p>Aquí una posible imagen:
+<img src="http://127.0.0.1:4000/fmy_desk/static/minion.png" alt="png" /></p>
+
+<h3 id="datos-extraidos-de-pubmed">Datos extraidos de PubMed</h3>
+<p>Para ir a la búqueda ir a <a href="https://www.ncbi.nlm.nih.gov/pubmed?term=mindfulness%5BTitle%5D">PubMed</a></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#Paquetes:</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+
+<span class="c">#Los datos:</span>
+
+<span class="n">label</span> <span class="o">=</span> <span class="p">[</span><span class="s">'1982'</span><span class="p">,</span><span class="s">'1984'</span><span class="p">,</span><span class="s">'1985'</span><span class="p">,</span><span class="s">'1988'</span><span class="p">,</span><span class="s">'1989'</span><span class="p">,</span><span class="s">'1992'</span><span class="p">,</span><span class="s">'1994'</span><span class="p">,</span><span class="s">'1995'</span><span class="p">,</span><span class="s">'1996'</span><span class="p">,</span><span class="s">'1997'</span><span class="p">,</span><span class="s">'1998'</span><span class="p">,</span><span class="s">'1999'</span><span class="p">,</span> <span class="s">'2000'</span><span class="p">,</span> <span class="s">'2001'</span><span class="p">,</span><span class="s">'2002'</span><span class="p">,</span><span class="s">'2003'</span><span class="p">,</span><span class="s">'2004'</span><span class="p">,</span><span class="s">'2005'</span><span class="p">,</span><span class="s">'2006'</span><span class="p">,</span><span class="s">'2007'</span><span class="p">,</span><span class="s">'2008'</span><span class="p">,</span><span class="s">'2009'</span><span class="p">,</span><span class="s">'2010'</span><span class="p">,</span><span class="s">'2011'</span><span class="p">,</span><span class="s">'2012'</span><span class="p">,</span><span class="s">'2013'</span><span class="p">,</span><span class="s">'2014'</span><span class="p">,</span><span class="s">'2015'</span><span class="p">,</span><span class="s">'2016'</span><span class="p">,</span><span class="s">'2017'</span><span class="p">]</span>
+<span class="n">studies</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">5</span><span class="p">,</span>
+    <span class="mi">7</span><span class="p">,</span>
+    <span class="mi">8</span><span class="p">,</span>
+    <span class="mi">15</span><span class="p">,</span>
+    <span class="mi">23</span><span class="p">,</span>
+    <span class="mi">17</span><span class="p">,</span>
+    <span class="mi">27</span><span class="p">,</span>
+    <span class="mi">51</span><span class="p">,</span>
+    <span class="mi">61</span><span class="p">,</span>
+    <span class="mi">90</span><span class="p">,</span>
+    <span class="mi">126</span><span class="p">,</span>
+    <span class="mi">156</span><span class="p">,</span>
+    <span class="mi">187</span><span class="p">,</span>
+    <span class="mi">243</span><span class="p">,</span>
+    <span class="mi">307</span><span class="p">,</span>
+    <span class="mi">418</span><span class="p">,</span>
+    <span class="mi">468</span><span class="p">,</span>
+    <span class="mi">504</span>
+<span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">studies</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">))</span>
+
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>30 30
+</code></pre>
+</div>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#Plot:</span>
+<span class="n">csfont</span> <span class="o">=</span> <span class="p">{</span><span class="s">'fontname'</span><span class="p">:</span><span class="s">'Times New Roman'</span><span class="p">}</span>
+<span class="k">def</span> <span class="nf">plot_bar_x</span><span class="p">():</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">studies</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'black'</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">''</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Número de artículos'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">,)</span>
+    <span class="c">#plt.title('Número de artículos con la palabra mindfulness en el título', **csfont)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'studies_mindfulness.jpg'</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'jpg'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+<span class="n">y</span><span class="o">=</span><span class="n">plot_bar_x</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<figure data-uk-lightbox="animation: slide">
+    <a class="uk-inline" href="http://localhost:4000/fmy_desk/assets/posts/output_2_0.jpg" caption="número de artículos con la palabra mindfulness en el título">
+        <img src="http://localhost:4000/fmy_desk/assets/posts/output_2_0.jpg" alt="Alt for image" />
+        <div class="uk-position-center">
+            <span data-uk-overlay-icon=""></span>
+        </div>
+    </a>
+    <figcaption data-uk-grid="" class="uk-flex-right"><span class="uk-width-auto">número de artículos con la palabra mindfulness en el título</span></figcaption>
+</figure>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#Para ver la cantidad de letras disponibles.</span>
+<span class="kn">import</span> <span class="nn">matplotlib.font_manager</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">font_manager</span><span class="o">.</span><span class="n">findSystemFonts</span><span class="p">(</span><span class="n">fontpaths</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">fontext</span><span class="o">=</span><span class="s">'ttf'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h1 id="clasificación-del-número-de-horas-en-cada-elemento-del-experto">Clasificación del número de horas en cada elemento del Experto</h1>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">plotly.plotly</span> <span class="kn">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="kn">as</span> <span class="nn">go</span>
+
+<span class="n">values</span><span class="o">=</span> <span class="p">[</span><span class="mi">140</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">100</span><span class="p">]</span>
+<span class="n">labels</span><span class="o">=</span> <span class="p">[</span><span class="s">'Teoría y Aplicaciones (140 horas)'</span><span class="p">,</span> <span class="s">'Práctica Personal (30 horas)'</span><span class="p">,</span> <span class="s">'Competencias (55 horas)'</span><span class="p">,</span> <span class="s">'Desarrollo de MBI (100 horas)'</span><span class="p">]</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">([</span><span class="n">trace</span><span class="p">],</span> <span class="n">filename</span><span class="o">=</span><span class="s">'basic_pie_chart'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~GustavoDietz/4.embed" height="525px" width="100%"></iframe>
+
+<h1 id="comparacion-de-yoga-mindfulness-y-meditación">Comparacion de yoga, mindfulness y meditación:</h1>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">df_yoga</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'yoga.csv'</span><span class="p">)</span>
+<span class="c">#pd.to_numeric(df_yoga['year'], errors='coerce')</span>
+<span class="c">#pd.to_numeric(df_yoga['count'], errors='coerce')</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_yoga</span><span class="p">[</span><span class="s">'year'</span><span class="p">])</span>
+<span class="n">df_yoga</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">'count'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">df_meditation</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'meditation.csv'</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_meditation</span><span class="p">[</span><span class="s">'year'</span><span class="p">])</span>
+<span class="n">df_meditation</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">'count'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">df_mindfulness</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'mindfulness.csv'</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_mindfulness</span><span class="p">[</span><span class="s">'year'</span><span class="p">])</span>
+<span class="n">df_mindfulness</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">'count'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">x_yoga</span><span class="o">=</span><span class="n">df_yoga</span><span class="p">[</span><span class="s">'year'</span><span class="p">]</span>
+<span class="n">y_yoga</span><span class="o">=</span><span class="n">df_yoga</span><span class="p">[</span><span class="s">'count'</span><span class="p">]</span>
+<span class="n">x_meditation</span><span class="o">=</span><span class="n">df_meditation</span><span class="p">[</span><span class="s">'year'</span><span class="p">]</span>
+<span class="n">y_meditation</span><span class="o">=</span><span class="n">df_meditation</span><span class="p">[</span><span class="s">'count'</span><span class="p">]</span>
+<span class="n">x_mindfulness</span><span class="o">=</span><span class="n">df_mindfulness</span><span class="p">[</span><span class="s">'year'</span><span class="p">]</span>
+<span class="n">y_mindfulness</span><span class="o">=</span><span class="n">df_mindfulness</span><span class="p">[</span><span class="s">'count'</span><span class="p">]</span>
+</code></pre>
+</div>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">plotly.plotly</span> <span class="kn">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="kn">as</span> <span class="nn">go</span>
+
+<span class="n">trace1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x_yoga</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y_yoga</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">'Yoga'</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">color</span><span class="o">=</span><span class="s">'rgb(37, 188, 193)'</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">trace2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x_meditation</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y_meditation</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">'Meditation'</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">color</span><span class="o">=</span><span class="s">'rgb(237, 150, 25)'</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">trace3</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">x_mindfulness</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y_mindfulness</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">'Mindfulness'</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">color</span><span class="o">=</span><span class="s">'rgb(109, 150, 72)'</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace2</span><span class="p">,</span> <span class="n">trace1</span><span class="p">,</span> <span class="n">trace3</span><span class="p">]</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s">'Investigación con palabras Yoga, Meditation y Mindfulness en título'</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s">'rgb(107, 107, 107)'</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s">'Número de artículos'</span><span class="p">,</span>
+        <span class="n">titlefont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s">'rgb(107, 107, 107)'</span>
+        <span class="p">),</span>
+        <span class="n">tickfont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s">'rgb(107, 107, 107)'</span>
+        <span class="p">)</span>
+    <span class="p">),</span>
+    <span class="n">legend</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+        <span class="n">bgcolor</span><span class="o">=</span><span class="s">'rgba(255, 255, 255, 0)'</span><span class="p">,</span>
+        <span class="n">bordercolor</span><span class="o">=</span><span class="s">'rgba(255, 255, 255, 0)'</span>
+    <span class="p">),</span>
+    <span class="n">barmode</span><span class="o">=</span><span class="s">'group'</span><span class="p">,</span>
+    <span class="n">bargap</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+    <span class="n">bargroupgap</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">'style-bar'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~GustavoDietz/10.embed" height="525px" width="100%"></iframe>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#En una clase de fmy:</span>
+
+<span class="n">values</span><span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">labels</span><span class="o">=</span> <span class="p">[</span><span class="s">'Teoría'</span><span class="p">,</span> <span class="s">'Explicación prácticas'</span><span class="p">,</span> <span class="s">'Práctica'</span><span class="p">]</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">([</span><span class="n">trace</span><span class="p">],</span> <span class="n">filename</span><span class="o">=</span><span class="s">'basic_pie_chart'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~GustavoDietz/4.embed" height="525px" width="100%"></iframe>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#Horas al año del FMY:</span>
+<span class="n">values</span><span class="o">=</span> <span class="p">[</span><span class="mi">120</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">104</span><span class="p">,</span><span class="mi">468</span><span class="p">]</span>
+<span class="n">labels</span><span class="o">=</span> <span class="p">[</span><span class="s">'Retiros'</span><span class="p">,</span> <span class="s">'Clases'</span><span class="p">,</span> <span class="s">'Reuniones-online'</span><span class="p">,</span> <span class="s">'Lectura'</span><span class="p">,</span> <span class="s">'Práctica'</span><span class="p">]</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">([</span><span class="n">trace</span><span class="p">],</span> <span class="n">filename</span><span class="o">=</span><span class="s">'basic_pie_chart'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~GustavoDietz/4.embed" height="525px" width="100%"></iframe>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#Suponiendo que duermas 8 horas:</span>
+<span class="c"># 6240 horas en 13 meses, de los cuales 822 los dedicas a la meditación, con lo cual: 5418 lo dedicas a otras cosas.</span>
+<span class="n">values</span><span class="o">=</span> <span class="p">[</span><span class="mi">822</span><span class="p">,</span><span class="mi">5418</span><span class="p">]</span>
+<span class="n">labels</span><span class="o">=</span> <span class="p">[</span><span class="s">'Práctica'</span><span class="p">,</span> <span class="s">'Otras cosas'</span><span class="p">]</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">([</span><span class="n">trace</span><span class="p">],</span> <span class="n">filename</span><span class="o">=</span><span class="s">'basic_pie_chart'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~GustavoDietz/4.embed" height="525px" width="100%"></iframe>
+
+
+                <div class="share uk-hidden@m uk-text-center uk-margin-large-top"><div class="share">
+    <a href="https://twitter.com/intent/tweet?text=Usando Jupyter&url=http://localhost:4000/jupyter_ej/&via=gustavodietz&related=gustavodietz" rel="nofollow" target="_blank" title="Share on Twitter" onclick="window.open(this.href, 'twitter', 'width=550,height=235');return false;"><span class="twitter"><svg class="svgIcon-use" width="40" height="40" viewBox="0 0 29 29"><path d="M21.967 11.8c.018 5.93-4.607 11.18-11.177 11.18-2.172 0-4.25-.62-6.047-1.76l-.268.422-.038.5.186.013.168.012c.3.02.44.032.6.046 2.06-.026 3.95-.686 5.49-1.86l1.12-.85-1.4-.048c-1.57-.055-2.92-1.08-3.36-2.51l-.48.146-.05.5c.22.03.48.05.75.08.48-.02.87-.07 1.25-.15l2.33-.49-2.32-.49c-1.68-.35-2.91-1.83-2.91-3.55 0-.05 0-.01-.01.03l-.49-.1-.25.44c.63.36 1.35.57 2.07.58l1.7.04L7.4 13c-.978-.662-1.59-1.79-1.618-3.047a4.08 4.08 0 0 1 .524-1.8l-.825.07a12.188 12.188 0 0 0 8.81 4.515l.59.033-.06-.59v-.02c-.05-.43-.06-.63-.06-.87a3.617 3.617 0 0 1 6.27-2.45l.2.21.28-.06c1.01-.22 1.94-.59 2.73-1.09l-.75-.56c-.1.36-.04.89.12 1.36.23.68.58 1.13 1.17.85l-.21-.45-.42-.27c-.52.8-1.17 1.48-1.92 2L22 11l.016.28c.013.2.014.35 0 .52v.04zm.998.038c.018-.22.017-.417 0-.66l-.498.034.284.41a8.183 8.183 0 0 0 2.2-2.267l.97-1.48-1.6.755c.17-.08.3-.02.34.03a.914.914 0 0 1-.13-.292c-.1-.297-.13-.64-.1-.766l.36-1.254-1.1.695c-.69.438-1.51.764-2.41.963l.48.15a4.574 4.574 0 0 0-3.38-1.484 4.616 4.616 0 0 0-4.61 4.613c0 .29.02.51.08.984l.01.02.5-.06.03-.5c-3.17-.18-6.1-1.7-8.08-4.15l-.48-.56-.36.64c-.39.69-.62 1.48-.65 2.28.04 1.61.81 3.04 2.06 3.88l.3-.92c-.55-.02-1.11-.17-1.6-.45l-.59-.34-.14.67c-.02.08-.02.16 0 .24-.01 2.12 1.55 4.01 3.69 4.46l.1-.49-.1-.49c-.33.07-.67.12-1.03.14-.18-.02-.43-.05-.64-.07l-.76-.09.23.73c.57 1.84 2.29 3.14 4.28 3.21l-.28-.89a8.252 8.252 0 0 1-4.85 1.66c-.12-.01-.26-.02-.56-.05l-.17-.01-.18-.01L2.53 21l1.694 1.07a12.233 12.233 0 0 0 6.58 1.917c7.156 0 12.2-5.73 12.18-12.18l-.002.04z"></path></svg>
+</span></a>
+    
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fjupyter_ej%2F" rel="nofollow" target="_blank" title="Share on Facebook" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span class="facebook"><svg class="svgIcon-use" width="40" height="40" viewBox="0 0 29 29"><path d="M16.39 23.61v-5.808h1.846a.55.55 0 0 0 .546-.48l.36-2.797a.551.551 0 0 0-.547-.62H16.39V12.67c0-.67.12-.813.828-.813h1.474a.55.55 0 0 0 .55-.55V8.803a.55.55 0 0 0-.477-.545c-.436-.06-1.36-.116-2.22-.116-2.5 0-4.13 1.62-4.13 4.248v1.513H10.56a.551.551 0 0 0-.55.55v2.797c0 .304.248.55.55.55h1.855v5.76c-4.172-.96-7.215-4.7-7.215-9.1 0-5.17 4.17-9.36 9.31-9.36 5.14 0 9.31 4.19 9.31 9.36 0 4.48-3.155 8.27-7.43 9.15M14.51 4C8.76 4 4.1 8.684 4.1 14.46c0 5.162 3.75 9.523 8.778 10.32a.55.55 0 0 0 .637-.543v-6.985a.551.551 0 0 0-.55-.55H11.11v-1.697h1.855a.55.55 0 0 0 .55-.55v-2.063c0-2.02 1.136-3.148 3.03-3.148.567 0 1.156.027 1.597.06v1.453h-.924c-1.363 0-1.93.675-1.93 1.912v1.78c0 .3.247.55.55.55h2.132l-.218 1.69H15.84c-.305 0-.55.24-.55.55v7.02c0 .33.293.59.623.54 5.135-.7 9.007-5.11 9.007-10.36C24.92 8.68 20.26 4 14.51 4"></path></svg>
+</span></a>
+</div>
+</div>
+            </div>
+
+            <p class="uk-article-meta">
+              <time datetime="2017-03-25T00:00:00+01:00" itemprop="datePublished">
+                
+                Mar 25, 2017
+              </time>
+              
+              by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Gustavo G.D.</span></span>
+            </p>
+
+            <div class="uk-margin-large-top">
+    <h3>Related Articles</h3>
+
+    
+    
+    
+
+    <ul class="uk-list uk-list-large link-icon-right">
+    
+
+    
+    
+
+    
+
+    
+        <li><a href="/fmy_desk/post7/">Getting a JavaScript console error</a></li>
+        
+        
+    
+
+    
+
+    
+    
+
+    
+
+    
+        <li><a href="/fmy_desk/post63/">Selecting the right fonts and colors</a></li>
+        
+        
+    
+
+    
+
+    
+    
+
+    
+
+    
+        <li><a href="/fmy_desk/post62/">Design tips for choosing great images</a></li>
+        
+        
+    
+
+    
+
+    
+    
+
+    
+
+    
+        <li><a href="/fmy_desk/post61/">Upgrading to paid service</a></li>
+        
+        
+            
+    </ul>
+</div>
+
+
+             
+ 
+        </article>
+
+        <script>
+            // Table of contents scroll to
+            UIkit.scroll('#markdown-toc a', {
+                duration: 400,
+                offset: 135
+            });
+        </script>
+
+    </div>
+</div>
+
+    </main>
+
+    <footer class="uk-section uk-section-muted uk-text-center uk-text-muted uk-link-muted">
+    <div class="uk-container uk-container-small">
+
+        <div>
+            <ul class="uk-subnav uk-flex-center">
+                
+                    
+                    
+                    
+                        <li><a href="/fmy_desk/help/" >Help</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/fmy_desk/faq/" >Faq</a></li>
+                    
+                
+                    
+                    
+                    
+                        <li><a href="/fmy_desk/contact/" >Contact</a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="uk-margin-medium">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/gustavodietz" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+
+
+
+<div>
+    <a href="https://vimeo.com/nirakara" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.youtube.com/channel/UCHuj2a6pPXAUR-1mtFR36nQ" data-uk-icon="icon: youtube" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://github.com/gustavodietz" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="nirakara@nirakara.org" data-uk-icon="icon: mail" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://nirakara.org" data-uk-icon="icon: link" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+            </div>
+        </div>
+        <div class="uk-margin-medium uk-text-small copyright">Hecho por <a href="https://nirakara.org/">nirakara</a> para la fmy.</div>
+
+    </div>
+</footer>
+
+
+    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+
+        <ul class="uk-nav uk-nav-default">
+            <li><a class="uk-logo uk-margin-small-bottom" href="/fmy_desk/"><fmy></a></li>
+            
+                
+            <li><a href="http://localhost:4000/fmy_desk/help/" >Help</a></li>
+            
+                
+            <li><a href="http://localhost:4000/fmy_desk/faq/" >Faq</a></li>
+            
+                
+            <li><a href="http://localhost:4000/fmy_desk/contact/" >Contact</a></li>
+            
+        </ul>
+
+        <div class="uk-margin-small-top uk-text-center uk-text-muted uk-link-muted">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                
+<div class="uk-first-column">
+    <a href="https://twitter.com/gustavodietz" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+
+
+
+
+
+
+
+<div>
+    <a href="https://vimeo.com/nirakara" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://www.youtube.com/channel/UCHuj2a6pPXAUR-1mtFR36nQ" data-uk-icon="icon: youtube" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://github.com/gustavodietz" data-uk-icon="icon: github" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="nirakara@nirakara.org" data-uk-icon="icon: mail" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+<div>
+    <a href="https://nirakara.org" data-uk-icon="icon: link" class="uk-icon-link uk-icon" target="_blank"></a>
+</div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    </body>
+
+</html>

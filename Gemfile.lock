@@ -104,6 +104,8 @@ GEM
     jekyll-github-metadata (2.3.1)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-jupyter-notebook (0.0.3)
+      jekyll
     jekyll-livereload (0.2.2)
       em-websocket (~> 0.5)
       jekyll (~> 3.0)
@@ -207,9 +209,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (= 3.4.1)
   jekyll-feed (~> 0.6)
   jekyll-gist
+  jekyll-jupyter-notebook
   jekyll-livereload
   jekyll-paginate (~> 1.1)
   jekyll-seo-tag
